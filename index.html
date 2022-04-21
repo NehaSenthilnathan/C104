@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Emotion Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+       <link rel="stylesheet" href="style.css">
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <centre>
+                <h1>FACIAL EMOTION RECOGNITION</h1>
+                <h2>How do you feel Today?</h2>
+                <h2>The model can recognise 4 basic emotions</h2>
+                <span>
+                    <h3>Happy</h3>
+                    <img src = "https://o.remove.bg/downloads/d5002957-ad09-4d95-a764-a4241a6755ae/535-5351025_transparent-background-happy-emoji-png-download-transparent-background-removebg-preview.png" width = "100" height = "100 ">
+                <hr>
+                <span>
+                    <h3>Sad</h3>
+                    <img src = "https://freepngimg.com/save/36860-sad-emoji-transparent-image/480x480" width = "100" height = "100 ">
+                <hr>
+                <span>
+                    <h3>Angry</h3>
+                    <img src = "https://o.remove.bg/downloads/7b30ba4a-b931-402e-82e5-70b26d64a629/38-384996_super-angry-emoji-png-transparent-background-angry-emoji-removebg-preview.png" width = "100" height = "100 ">
+                <hr>
+                <span>
+                    <h3>Surprised</h3>
+                    <img src = "http://cdn.shopify.com/s/files/1/1061/1924/products/12_grande.png?v=1571606116" width = "100" height = "100 ">
+                <hr><br>
+
+               <label>Camera View</label>
+               <div id = "camera"></div>
+               <br><br>
+
+               <div id = "result"></div>
+               <br><br>
+
+               <button onclick="take_snapshot();" class="btn btn-success" >Take picture</button>
+               <br><br>
+               <button onclick="take_snapshot();" class="btn btn-success" >Identify</button>
+
+               <h4>Object:<span id= "result_object_name"></span></h4>
+               <h4>Accuracy:<span id= "result_object_accuracy"></span></h4>
+
+
+            </centre>
+       
+    </div>
+    <script src="main.js"></script>
+    </body>
+</html>
